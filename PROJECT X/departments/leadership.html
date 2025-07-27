@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inner Circle | Leadership Core</title>
+  <link rel="stylesheet" href="../assets/css/leadership.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <h1 class="glitch">INNER CIRCLE</h1>
+    <p class="sub">Where the rare lead the future</p>
+  </header>
+
+  <section class="intro">
+    <p>
+      This is not just a team. This is the <strong>brain of the club</strong> — where vision is born, strategy is crafted, and impact is executed. Those inside the Inner Circle don’t just lead projects — they shape futures. These aren’t just roles, they’re missions.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills Gained</h2>
+    <ul>
+      <li>Strategic Visioning</li>
+      <li>Project Oversight & Delegation</li>
+      <li>High-Stakes Decision Making</li>
+      <li>Inspirational Leadership</li>
+      <li>Conflict & Crisis Resolution</li>
+      <li>Cross-Team Collaboration</li>
+      <li>Professional Communication</li>
+      <li>Negotiation & Influence</li>
+      <li>Public Speaking & Representation</li>
+      <li>Emotional Intelligence Mastery</li>
+    </ul>
+  </section>
+
+  <section class="famous-leaders">
+    <h2>They Led Before They Ruled</h2>
+    <div class="leader-grid">
+      <div class="leader-card" onclick="showLeader('leader1')">
+        <img src="https://i.imgur.com/LNlNeXr.jpg" alt="Barack Obama">
+        <h3>Barack Obama</h3>
+      </div>
+      <div class="leader-card" onclick="showLeader('leader2')">
+        <img src="https://i.imgur.com/Lyb6S4V.jpg" alt="Sheryl Sandberg">
+        <h3>Sheryl Sandberg</h3>
+      </div>
+      <div class="leader-card" onclick="showLeader('leader3')">
+        <img src="https://i.imgur.com/FZQzR1P.jpg" alt="Malala Yousafzai">
+        <h3>Malala Yousafzai</h3>
+      </div>
+      <div class="leader-card" onclick="showLeader('leader4')">
+        <img src="https://i.imgur.com/4jRjjTL.jpg" alt="Mark Zuckerberg">
+        <h3>Mark Zuckerberg</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="roles">
+    <h2>Available Roles</h2>
+    <div class="role-grid">
+      <div class="role-card taken">
+        <h3>PRESIDENT</h3>
+        <p>Position Filled</p>
+      </div>
+      <div class="role-card taken">
+        <h3>VICE PRESIDENT</h3>
+        <p>Position Filled</p>
+      </div>
+      <div class="role-card open" onclick="openModal('SECRETARY')">
+        <h3>SECRETARY</h3>
+        <p>Apply Now</p>
+      </div>
+      <div class="role-card redirect" onclick="window.location.href='MANAGERS_PAGE_LINK'">
+        <h3>MANAGERS</h3>
+        <p>View Section</p>
+      </div>
+      <div class="role-card open" onclick="openModal('MENTOR')">
+        <h3>MENTORS</h3>
+        <p>Apply Now</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="leader-modal" id="leader-modal">
+    <div class="leader-modal-content">
+      <span class="close" onclick="closeLeader()">&times;</span>
+      <img id="leader-img" src="" alt="Leader">
+      <h3 id="leader-name"></h3>
+      <p id="leader-bio"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Apply for <span id="modal-role">ROLE</span></h2>
+      <form>
+        <input type="text" placeholder="Your Full Name" required />
+        <input type="email" placeholder="University Email" required />
+        <textarea placeholder="Why do you want to join?" required></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/js/departments/leaders.js"></script>
+</body>
+</html>
