@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codebreakers | Technical Division</title>
+  <link rel="stylesheet" href="../assets/css/technical.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</
+  
+  <body>
+  <div class="matrix-bg" id="matrixBg"></div>
+  
+  <header class="hero">
+    <h1 class="cyber-glitch">CODEBREAKERS</h1>
+    <p class="sub">Masters of the digital realm</p>
+  </header>
+
+  <section class="intro">
+    <p>
+      Welcome to the <strong>digital frontier</strong>. Here, code is law and data is power. We don't just use technology — we bend it to our will. From breaking encrypted systems to building unbreachable defenses, we are the guardians of the digital realm.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills Matrix</h2>
+    <div class="skills-grid">
+      <div class="skill-card" data-skill="1">
+        <div class="skill-icon">⚡</div>
+        <h3>Binary Mastery</h3>
+        <p>Understanding systems at the lowest level</p>
+      </div>
+      <div class="skill-card" data-skill="2">
+        <div class="skill-icon">🔐</div>
+        <h3>Cryptographic Analysis</h3>
+        <p>Breaking and building secure communications</p>
+      </div>
+      <div class="skill-card" data-skill="3">
+        <div class="skill-icon">🌐</div>
+        <h3>Network Infiltration</h3>
+        <p>Navigating digital infrastructures</p>
+      </div>
+      <div class="skill-card" data-skill="4">
+        <div class="skill-icon">🔍</div>
+        <h3>Reverse Engineering</h3>
+        <p>Deconstructing complex systems</p>
+      </div>
+      <div class="skill-card" data-skill="5">
+        <div class="skill-icon">🛡️</div>
+        <h3>Security Architecture</h3>
+        <p>Building impenetrable defenses</p>
+      </div>
+      <div class="skill-card" data-skill="6">
+        <div class="skill-icon">👁️</div>
+        <h3>Digital Intelligence</h3>
+        <p>Gathering information from the shadows</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="departments">
+    <h2>Division Branches</h2>
+    <div class="dept-grid">
+      <div class="dept-card web" data-dept="web">
+        <div class="dept-header">
+          <h3>/WEB</h3>
+          <div class="dept-status">ACTIVE</div>
+        </div>
+        <p>Masters of web exploitation and development. From SQL injection to building secure applications.</p>
+        <div class="dept-roles">
+          <div class="role-badge">Web Dev Specialist</div>
+          <div class="role-badge">Penetration Tester</div>
+          <div class="role-badge">Security Analyst</div>
+        </div>
+      </div>
+
+      <div class="dept-card net" data-dept="net">
+        <div class="dept-header">
+          <h3>/NET</h3>
+          <div class="dept-status">ACTIVE</div>
+        </div>
+        <p>Network architects and infiltrators. Understanding the backbone of digital communication.</p>
+        <div class="dept-roles">
+          <div class="role-badge">Network Engineer</div>
+          <div class="role-badge">MITM Specialist</div>
+          <div class="role-badge">Traffic Analyst</div>
+        </div>
+      </div>
+
+      <div class="dept-card rev" data-dept="rev">
+        <div class="dept-header">
+          <h3>/REV</h3>
+          <div class="dept-status">ACTIVE</div>
+        </div>
+        <p>Reverse engineering specialists. Breaking down malware and understanding binary structures.</p>
+        <div class="dept-roles">
+          <div class="role-badge">Malware Analyst</div>
+          <div class="role-badge">Binary Expert</div>
+          <div class="role-badge">Assembly Guru</div>
+        </div>
+      </div>
+
+      <div class="dept-card crypto" data-dept="crypto">
+        <div class="dept-header">
+          <h3>/CRYPTO</h3>
+          <div class="dept-status">ACTIVE</div>
+        </div>
+        <p>Cryptography masters. Creating and breaking encryption systems that protect the digital world.</p>
+        <div class="dept-roles">
+          <div class="role-badge">Cryptanalyst</div>
+          <div class="role-badge">PKI Specialist</div>
+          <div class="role-badge">Cipher Expert</div>
+        </div>
+      </div>
+
+      <div class="dept-card osint" data-dept="osint">
+        <div class="dept-header">
+          <h3>/OSINT</h3>
+          <div class="dept-status">ACTIVE</div>
+        </div>
+        <p>Open source intelligence gathering. Finding hidden information in plain sight.</p>
+        <div class="dept-roles">
+          <div class="role-badge">Intelligence Analyst</div>
+          <div class="role-badge">Social Engineer</div>
+          <div class="role-badge">Geolocation Expert</div>
+        </div>
+      </div>
+
+      <div class="dept-card research" data-dept="research">
+        <div class="dept-header">
+          <h3>/RESEARCH</h3>
+          <div class="dept-status">RECRUITING</div>
+        </div>
+        <p>Staying ahead of emerging threats and technologies. The future begins here.</p>
+        <div class="dept-roles">
+          <div class="role-badge">Research Analyst</div>
+          <div class="role-badge">Trend Tracker</div>
+          <div class="role-badge">Report Writer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ctf-team">
+    <h2>Elite Strike Force</h2>
+    <div class="ctf-container">
+      <div class="ctf-banner">
+        <h3>wAnNa_cRy divisions &lt;3</h3>
+        <p>The best operatives from each department unite to compete in global cyber warfare competitions.</p>
+      </div>
+      <div class="ctf-apply">
+        <button class="elite-btn" onclick="openCTFModal()">JOIN THE ELITE</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="ctf-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCTFModal()">&times;</span>
+      <h2>Elite CTF Application</h2>
+      <form>
+        <input type="text" placeholder="Handle/Username" required />
+        <input type="email" placeholder="Contact Email" required />
+        <select required>
+          <option value="">Select Primary Expertise</option>
+          <option value="web">Web Exploitation</option>
+          <option value="crypto">Cryptography</option>
+          <option value="rev">Reverse Engineering</option>
+          <option value="osint">OSINT</option>
+          <option value="net">Network Security</option>
+        </select>
+        <textarea placeholder="Prove your skills... (CTF experience, certifications, notable achievements)" required></textarea>
+        <button type="submit">INITIATE</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/js/departments/technical.js"></script>
+</body>
+</html>
